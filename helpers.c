@@ -10,12 +10,8 @@
 #include <cs50.h>
 #include<stdio.h>
 #include "helpers.h"
-bool search(int value, int values[], int n);
-void sort(int values[], int n);
-int size, needle, min;
-const int MAX = 65536;
-int haystack[MAX];
-
+int min = 0;
+int max = 0;
 //
 // Returns true if value is in array of n values, else false.
 //
@@ -23,16 +19,16 @@ bool search(int value, int values[], int n)
 {
     // TODO: implement a searching algorithm
     
-        while (MAX >= min);
-        int mid = (MAX + min)/2;
-        if(haystack[mid] < needle)
+        while (max >= min);
+        int mid = (max + min)/2;
+        if(values[mid] < value)
         {
-            min = MAX + 1;
-            printf("min < needle %d\n", min);
+            min = max + 1;
+            printf("min < value %d\n", min);
         }
-        else if(haystack[mid] > needle)
+        else if(values[mid] > value)
         {   
-            min = MAX - 1;
+            min = max - 1;
         }
         else
         {
