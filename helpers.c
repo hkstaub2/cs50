@@ -44,6 +44,7 @@ void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
     int i,j,temp;
+    int = 0;
     for(i = 0; i < n; i++)
      {
         for(j = i + 1; j < n; j++) 
